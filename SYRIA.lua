@@ -2284,7 +2284,7 @@ Text = [[
 ≪━━━━━━𝐒𝐘━━━━━━≫
  ❃∫ ↬[Information](t.me/amyr124)
 ≪━━━━━━𝐒𝐘━━━━━━≫
- ❃∫ ↬[DEVELOPER](t.me/CCFRR)
+ ❃∫ ↬[DEVELOPER](t.me/a_m_y_r_1_1)
 ≪━━━━━━𝐒𝐘━━━━━━≫
  ❃∫ ↬[To talk to us](t.me/a_m_y_r_1_4_5_bot)
 ]]
