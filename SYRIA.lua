@@ -137,7 +137,7 @@ end
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
 print([[
- ‌‌‎ ______   ______  ___    _    
+‌‌‎ ______   ______  ___    _    
 / ___\ \ / /  _ \|_ _|  / \   
 \___ \\ V /| |_) || |  / _ \  
  ___) || | |  _ < | | / ___ \ 
@@ -169,7 +169,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1241774430,1033028167}   
+sudo_users = {SUDO,1241774430,1355955429}   
 function SudoBot(msg)  
 local SYRIA = false  
 for k,v in pairs(sudo_users) do  
@@ -230,7 +230,7 @@ end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1241774430) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1033028167) then
+elseif tonumber(user_id) == tonumber(1355955429) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -258,8 +258,8 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1241774430) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(1033028167) then
-var = 'مبرمج سوريا '
+elseif tonumber(user_id) == tonumber(1355955429) then
+var = 'مبرمج سوريا'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif tonumber(user_id) == tonumber(bot_id) then  
@@ -978,12 +978,12 @@ end
 if text == 'تحديث السورس ❃' and SudoBot(msg) then 
 os.execute('rm -rf SYRIA.lua')
 os.execute('wget https://raw.githubusercontent.com/SYRIATEAM/SYRIA/main/SYRIA.lua')
-send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس سوريا \n ❃∫ الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس سوريا\n ❃∫ الاصدار » { 1.3v}')
 dofile('SYRIA.lua')  
 end
 if text == 'الاصدار ❃' and SudoBot(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ❃∫ اصدار سورس سوريا  \n ❃∫ الاصدار »{ 1.3v}')
+send(msg.chat_id_, msg.id_,' ❃∫ اصدار سورس سوريا \n ❃∫ الاصدار »{ 1.3v}')
 end
 if text == "ضع اسم للبوت ❃" and SudoBot(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
@@ -2225,7 +2225,7 @@ return false
 end
 os.execute('rm -rf SYRIA.lua')
 os.execute('wget https://raw.githubusercontent.com/SYRIATEAM/SYRIA/main/SYRIA.lua')
-send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس سوريا \n ❃∫ الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس سوريا\n ❃∫ الاصدار » { 1.3v}')
 dofile('SYRIA.lua')  
 end
 
@@ -2284,7 +2284,7 @@ Text = [[
 ≪━━━━━━𝐒𝐘━━━━━━≫
  ❃∫ ↬[Information](t.me/amyr124)
 ≪━━━━━━𝐒𝐘━━━━━━≫
- ❃∫ ↬[DEVELOPER](t.me/a_m_y_r_1_1)
+ ❃∫ ↬[DEVELOPER](t.me/CCFRR)
 ≪━━━━━━𝐒𝐘━━━━━━≫
  ❃∫ ↬[To talk to us](t.me/a_m_y_r_1_4_5_bot)
 ]]
@@ -3357,6 +3357,7 @@ t = " ❃∫ لا يوجد مطورين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
+
 
 
 
@@ -7797,8 +7798,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'سوريا ').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'سوريا ')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'سوريا').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'سوريا')
 local SYRIA_Msg = {
 'عمغي 🥺💕.',
 'هاا شتريد كافي ☹️.',
@@ -8380,7 +8381,7 @@ end
 end
 end
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'سوريا ').." غادر" or text == 'بوت غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'سوريا').." غادر" or text == 'بوت غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,' ❃∫ تم مغادرة الكروب') 
@@ -8389,7 +8390,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'سوريا ')
+Namebot = (database:get(bot_id..'Name:Bot') or 'سوريا')
 send(msg.chat_id_, msg.id_,'اسمي الكيوت ['..Namebot..'] ')
 end
 if text == 'الاحصائيات' then
@@ -9540,7 +9541,7 @@ Text = [[
 *❃م9 ◂ اوامر مطور الاساسي* 
 *❃م10 ◂ اوامر الاعضاء*
 ٴ≪━━━━━━𝐒𝐘━━━━━━≫ٴ
-彡 .[𝐒𝐘𝐑𝐈𝐀 𝐓𝐄𝐀𝐌](t.me/amyr124)➢ 
+彡 .[𝐒𝐘𝐑𝐈𝐀 C𝐇𝐀𝐍𝐍𝐄𝑳](t.me/amyr124)➢ 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9594,7 +9595,7 @@ Text = [[
 ❃∫ الجهات
 ❃∫ الاشعارات
 •━━━━━━━━━━━━━•ٴ
-彡 .[𝐒𝐘𝐑𝐈𝐀 𝐓𝐄𝐀𝐌](t.me/amyr124)➢
+彡 .[𝐒𝐘𝐑𝐈𝐀 C𝐇𝐀𝐍𝐍𝐄𝑳](t.me/@amyr124)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9639,7 +9640,7 @@ Text = [[
 ❃∫اوامر التحشيش
 ❃∫صورتي
  •━━━━━━━━━━━━━•ٴ
-彡 .[𝐒𝐘𝐑𝐈𝐀 𝐓𝐄𝐀𝐌](t.me/amyr124)➢
+彡 .[𝐒𝐘𝐑𝐈𝐀 C𝐇𝐀𝐍𝐍𝐄𝑳](t.me/@amyr124)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9677,7 +9678,7 @@ Text = [[
 ❃∫ وصف
 ❃∫ تكرار + عدد
  •━━━━━━━━━━━━━•ٴ
-彡 .[𝐒𝐘𝐑𝐈𝐀 𝐓𝐄𝐀𝐌](t.me/amyr124)➢
+彡 .[𝐒𝐘𝐑𝐈𝐀 C𝐇𝐀𝐍𝐍𝐄𝑳](t.me/@amyr124)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9723,7 +9724,7 @@ Text = [[
 ❃∫ امر 
 ❃∫ الاوامر المضافه
 •━━━━━━━━━━━━━━•ٴ
-彡 .[𝐒𝐘𝐑𝐈𝐀 𝐓𝐄𝐀𝐌](t.me/amyr124)➢
+彡 .[𝐒𝐘𝐑𝐈𝐀 C𝐇𝐀𝐍𝐍𝐄𝑳](t.me/@amyr124)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9773,7 +9774,7 @@ Text = [[
 ❃∫ تغير امر الاوامر
 ❃∫ تغير امر م1 ~ الئ م10
  •━━━━━━━━━━━━━━•ٴ
-彡 .[𝐒𝐘𝐑𝐈𝐀 𝐓𝐄𝐀𝐌](t.me/amyr124)➢
+彡 .[𝐒𝐘𝐑𝐈𝐀 C𝐇𝐀𝐍𝐍𝐄𝑳](t.me/@amyr124)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9828,7 +9829,7 @@ Text = [[
 ❃∫الاوامر المضافه
 ❃∫قائمه المنع
 •━━━━━━━━━━━━━•ٴ
-彡 .[𝐒𝐘𝐑𝐈𝐀 𝐓𝐄𝐀𝐌](t.me/amyr124)➢
+彡 .[𝐒𝐘𝐑𝐈𝐀 C𝐇𝐀𝐍𝐍𝐄𝑳](t.me/@amyr124)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9887,7 +9888,7 @@ Text = [[
 ❃∫رفع + تنزيل ← الحاته
 ❃∫تاك للحاتات
 •━━━━━━━━━━━━━•ٴ
-彡 .[𝐒𝐘𝐑𝐈𝐀 𝐓𝐄𝐀𝐌](t.me/amyr124)➢
+彡 .[𝐒𝐘𝐑𝐈𝐀 C𝐇𝐀𝐍𝐍𝐄𝑳](t.me/@amyr124)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9919,7 +9920,7 @@ Text = [[
 ❃∫اذاعه 
 ❃∫ردود المطور 
  •━━━━━━━━━━━━━•ٴ
-彡 .[𝐒𝐘𝐑𝐈𝐀 𝐓𝐄𝐀𝐌](t.me/amyr124)➢
+彡 .[𝐒𝐘𝐑𝐈𝐀 C𝐇𝐀𝐍𝐍𝐄𝑳](t.me/@amyr124)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9996,7 +9997,7 @@ Text = [[
 ❃∫تنظيف المشتركين
 ❃∫تنظيف الكروبات
 •━━━━━━━━━━━━━•ٴ
-彡 .[𝐒𝐘𝐑𝐈𝐀 𝐓𝐄𝐀𝐌](t.me/amyr124)➢
+彡 .[𝐒𝐘𝐑𝐈𝐀 C𝐇𝐀𝐍𝐍𝐄𝑳](t.me/@amyr124)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10031,7 +10032,7 @@ Text = [[
 ❃∫شنو رئيك بهاي بالرد
 ❃∫تحب هذا
 •━━━━━━━━━━━━━•ٴ
-彡 .[𝐒𝐘𝐑𝐈𝐀 𝐓𝐄𝐀𝐌](t.me/amyr124)➢
+彡 .[𝐒𝐘𝐑𝐈𝐀 C𝐇𝐀𝐍𝐍𝐄𝑳](t.me/@amyr124)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10619,7 +10620,7 @@ Text_Games = [[
  ❃∫لعبه الحزوره ~⪼لعبة التفكير 
  ❃∫لعبه المعاني ~⪼ العبه الشهيره 
 •━━━━━━━━━━━━━•ٴ
-彡 .[𝐒𝐘𝐑𝐈𝐀 𝐓𝐄𝐀𝐌](t.me/amyr124)➢
+彡 .[𝐒𝐘𝐑𝐈𝐀 C𝐇𝐀𝐍𝐍𝐄𝑳](t.me/amyr124)➢
 ]]
 send(msg.chat_id_, msg.id_,Text_Games) 
 end
@@ -10641,7 +10642,7 @@ for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'ٴ❃∫ٴ≪━━━━━━𝐒𝐘━━━━━━≫ٴ❃∫○ٴ\n❃∫ 彡 .[𝐒𝐘𝐑𝐈𝐀 𝐓𝐄𝐀𝐌](t.me/amyr124)➢ ')
+send(msg.chat_id_, msg.id_, t..'ٴ❃∫ٴ≪━━━━━━𝐒𝐘━━━━━━≫ٴ❃∫○ٴ\n❃∫ 彡 .[𝐒𝐘𝐑𝐈𝐀 C𝐇𝐀𝐍𝐍𝐄𝑳](t.me/amyr124)➢ ')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '❃∫ تم تعطيل الابراج')
@@ -10842,7 +10843,7 @@ if (text and text == "تفعيل اوامر التحشيش") then
 send(msg.chat_id_, msg.id_, '  ❃∫ تم تفعيل اوامر التحشيش')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'سوريا ')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'سوريا')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
